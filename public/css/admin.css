@@ -1,0 +1,56 @@
+/* Estilos generales para el panel de administración */
+body {
+    background-color: #f3f3f3; /* Fondo claro para el cuerpo */
+    font-family: 'Open Sans', sans-serif; /* Tipografía legible */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3c4239; /* Fondo gris para la navbar */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff; /* Color blanco para enlaces de la navbar */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #f3c50f; /* Color amarillo al pasar el ratón */
+}
+
+/* Offcanvas */
+.offcanvas {
+    background-color: #107033; /* Fondo verde oscuro para el offcanvas */
+}
+
+.offcanvas a {
+    color: #ffffff; /* Color de texto blanco para enlaces */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.offcanvas a:hover {
+    color: #f3c50f; /* Color amarillo al pasar el ratón */
+    text-decoration: underline; /* Subrayar el enlace al hacer hover */
+}
+
+/* Alertas */
+.alert {
+    border-radius: 5px; /* Bordes redondeados para alertas */
+}
+
+/* Footer */
+.footer {
+    background-color: #3c4239; /* Fondo gris para el footer */
+    color: #ffffff; /* Texto blanco para el footer */
+    padding: 20px 0; /* Espaciado del footer */
+}
+
+/* Botones */
+.btn-danger {
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}

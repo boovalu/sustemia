@@ -1,0 +1,331 @@
+:root {
+  --color-success: #107033;
+  --color-danger: #e74c3c;
+  --color-warning: #f3c50f;
+  --color-bg-light: #fdfdfd; /* Fondo claro */
+  --color-bg-white: #ffffff; /* Blanco */
+  --color-black: #000000; /* Negro */
+  --color-success-hover: #138f41; /* Verde claro al hacer hover */
+  --color-warning-hover: #e6b600; /* Amarillo más oscuro al hacer hover */
+  --color-danger-hover: #c0392b; /* Color más oscuro al hacer hover */
+}
+
+/* Estilos Generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-bg-light);
+  margin: 0; /* Sin márgenes */
+  line-height: 1.6; /* Mejora la legibilidad */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-black);
+}
+
+h1 {
+  font-weight: 600; /* Semibold */
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-weight: 500; /* Semibold */
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+h3 {
+  font-weight: 400; /* Semibold */
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+h4, h5, h6 {
+  font-weight: 300; /* Semibold */
+}
+
+/* Botones */
+.btn {
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-outline-success {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--color-success);
+  color: var(--color-bg-white);
+}
+
+/* Botones Mejorados */
+.btn-warning {
+  background-color: var(--color-warning);
+  color: var(--color-black);
+}
+
+.btn-warning:hover {
+  background-color: #e6b600;
+  color: var(--color-bg-white);
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-bg-white);
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: var(--color-bg-white);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Tarjetas */
+.card-custom {
+  background-color: var(--color-bg-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--color-success);
+  color: var(--color-bg-white);
+  text-align: center;
+}
+
+/* Alertas */
+.alert {
+  border-radius: 5px;
+}
+
+.alert-container {
+  margin-bottom: 1rem; /* Espacio entre alertas y contenido */
+}
+
+/* Tabla */
+.table {
+  background-color: var(--color-bg-white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: var(--color-black);
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+/* Clases de Estado */
+.table-danger {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.table-warning {
+  background-color: rgba(243, 197, 15, 0.1);
+}
+
+.table-success {
+  background-color: rgba(16, 112, 51, 0.1);
+}
+
+/* Modales */
+.modal-content {
+  border-radius: 10px;
+}
+
+/* Imágenes Redondeadas */
+.rounded-img {
+  border-radius: 50%; /* Hace las imágenes elípticas */
+  max-width: 100px; /* Mantener el tamaño máximo */
+  height: 100px; /* Establecer una altura fija para uniformidad */
+  border: 3px solid #ffffff; /* Borde blanco para destacar */
+  padding: 5px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco */
+  transition: transform 0.3s; /* Transición para efecto hover */
+}
+
+.rounded-img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Footer */
+.page-footer {
+  background-color: var(--color-success); /* Fondo verde */
+  margin: 0; /* Sin margen */
+  padding: 40px 0; /* Mantener el padding según lo necesites */
+  text-align: center; /* Centrar texto */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.page-footer h2 {
+  color: #ffffff; /* Título en blanco */
+}
+
+.page-footer p {
+  margin: 0; /* Sin margen */
+}
+
+.page-footer a {
+  font-size: 1.5rem; /* Tamaño de los iconos */
+  transition: color 0.3s; /* Transición suave */
+}
+
+.page-footer a:hover {
+  color: var(--color-warning); /* Color al hacer hover */
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-bg-white);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px; /* Padding ajustado */
+}
+
+.navbar-brand {
+  color: var(--color-success); /* Color del logo */
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-black);
+  padding: 10px 15px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-warning);
+}
+
+/* Iconos */
+.icon {
+  font-size: 60px;
+  color: var(--color-warning);
+}
+
+/* Offcanvas */
+.offcanvas {
+  width: 250px; /* Ancho del menú */
+}
+
+.offcanvas-body {
+  padding: 20px; /* Padding del cuerpo del offcanvas */
+}
+
+/* Aseguramos que el offcanvas siempre se muestre desde el lado izquierdo */
+.offcanvas-start {
+position: fixed; /* Fijamos la posición del menú */
+top: 0;
+left: 0;
+bottom: 0;
+width: 250px; /* Ancho fijo para el offcanvas */
+z-index: 1050; /* Para asegurarnos de que se apile por encima del contenido */
+transform: translateX(-100%); /* Lo ocultamos inicialmente fuera de la pantalla */
+transition: transform 0.3s ease; /* Transición suave */
+}
+
+.offcanvas.show {
+transform: translateX(0); /* Lo mueve a la vista cuando se activa */
+}
+
+/* Ajustes para dispositivos móviles y tabletas */
+@media (max-width: 1024px) {
+/* Mostrar el offcanvas a la izquierda */
+.offcanvas-start {
+  width: 250px; /* Mantener el ancho para móviles */
+}
+
+.navbar-toggler {
+  display: block; /* Aseguramos que el botón se vea en dispositivos pequeños */
+}
+
+/* Ajustamos la visibilidad del contenido principal cuando el offcanvas está abierto */
+body.sidebar-open {
+  overflow: hidden; /* Evitar scroll cuando el menú está abierto */
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* Para la versión de escritorio (mayores a 1024px) */
+@media (min-width: 1024px) {
+.offcanvas-start {
+  transform: translateX(0); /* El offcanvas estará visible por defecto */
+}
+
+.sidebar-open {
+  padding-left: 0; /* Sin margen adicional en pantallas grandes */
+}
+}
+
+/* Responsive: Ajustes específicos para móviles (menos de 768px) */
+@media (max-width: 768px) {
+.container {
+  padding: 10px;
+}
+
+.card-custom {
+  margin: 0;
+}
+
+.navbar-nav {
+  flex-direction: column; /* Cambiar a columna en móviles */
+}
+}
+
+/* Accesibilidad */
+a {
+outline: none; /* Eliminar el contorno por defecto */
+}
+
+/* Nuevas Clases de Estado */
+.badge-success {
+background-color: var(--color-success);
+}
+
+.badge-warning {
+background-color: var(--color-warning);
+color: var(--color-black);
+}
+
+.badge-danger {
+background-color: var(--color-danger);
+}
+
+.badge {
+padding: 0.5rem 1rem;
+font-size: 1rem;
+border-radius: 1rem;
+text-transform: capitalize;
+}
