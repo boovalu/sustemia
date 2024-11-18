@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+/storage/*.key
+/storage/*.log
+.env
+.env.backup
+/public/storage
+.DS_Store
+npm-debug.log
+yarn-error.log
